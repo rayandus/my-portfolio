@@ -18,12 +18,83 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  /* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb)); */
+
+  /* background-image: url('/bg-image.jpg'); */
+  /* background-image: url('/profile-image.jpg');
+  background-size: fit;
+  background-repeat: no-repeat; */
+  background-image: linear-gradient(to right bottom, #f4ac8b, #efb18d, #e9b591, #e4b995, #dfbd9a, #dfbd9a, #dfbd9a, #dfbd9a, #e4b995, #e9b591, #efb18d, #f4ac8b);
+
+}
+
+.background-image {
+  position: absolute;
+  background-image: url('/profile-image.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(30px);
+  -webkit-filter: blur(30px);
+  height: 100%;
+  width: 100%;
+}
+
+.glass-container {
+  background-image: url('/profile-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-background {
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
+}
+
+.fill-available-height {
+  height: -webkit-fill-available;
+  height: -moz-available;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.h-inherit {
+  height: inherit;
+}
+
+.thin-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.thin-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.thin-scroll::-webkit-scrollbar-thumb {
+  background: transparent;   /* #a8a8a8c7; */
+}
+.thin-scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(125, 125, 125, 0.3);
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.timeline-left > li {
+  --timeline-col-start: 4rem !important;
+  --timeline-row-start: 0.8rem !important;
+}
+
+.timeline-left-start {
+  align-self: start !important;
+  margin-top: 0.8rem;
 }
 
 @layer utilities {
