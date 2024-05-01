@@ -12,7 +12,7 @@ const links = [
     href: '/skills',
     icon: VectorPen,
   },
-  { name: 'Experience', href: '/experience', icon: Briefcase },
+  { name: ' Work Experience', href: '/work-experience', icon: Briefcase },
   { name: 'Projects', href: '/projects', icon: Diagram3 },
 ];
 
@@ -30,12 +30,11 @@ const SideNavMenu = () => {
               <Link
                 href={link.href}
                 className={clsx(
-                  'h-[48px] flex flex-row gap-4 rounded-box active:text-white',
+                  'h-[48px] flex flex-row gap-4 rounded-box active:text-white focus:text-white',
                   pathname === link.href
-                    ? 'rounded-box bg-gradient-to-r from-cyan-500 to-blue-500 text-white'
+                    ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white'
                     : '',
                 )}
-                // className="menu h-[48px] bg-slate-100 rounded-box flex flex-row gap-4 w-full items-center text-lg"
               >
                 <LinkIcon size={20} />
                 <span>{link.name}</span>
