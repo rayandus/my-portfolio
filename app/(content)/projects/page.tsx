@@ -1,13 +1,11 @@
 import { projects } from '@/app/data/projects';
 import TechStack from './tech-stack';
+import { GlassCard } from '@/app/common';
 
 const Projects = () => {
   return (
-    <section className="h-inherit">
-      <div
-        className="thin-scroll overflow-y-auto mt-5"
-        style={{ height: 'calc(100% - 70px)' }}
-      >
+    <section className="xl:mb-[60px]">
+      <div>
         <div className="flex flex-col gap-4 pr-2">
           {projects.map((project) => {
             const {
@@ -20,10 +18,11 @@ const Projects = () => {
             } = project;
 
             return (
-              <div
-                key={projectName}
-                className="card card-side text-base bg-white/0 shadow-lg ring-1 ring-inset ring-white/5 backdrop-blur-3xl last-of-type:mb-6"
-              >
+              // <div
+              //   key={projectName}
+              //   className="card card-side text-base bg-white/0 shadow-lg ring-1 ring-inset ring-white/5 backdrop-blur-3xl last-of-type:mb-6"
+              // >
+              <GlassCard key={projectName} className="p-5">
                 <div className="card-body p-6">
                   <h2 className="card-title">{projectName}</h2>
                   <div>
@@ -49,7 +48,7 @@ const Projects = () => {
                     <TechStack stack={techStack} />
                   </div>
                 </div>
-              </div>
+              </GlassCard>
             );
           })}
         </div>
