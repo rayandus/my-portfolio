@@ -6,7 +6,7 @@ import { GlassCard } from '@/app/common';
 
 const WorkExperience = () => {
   return (
-    <section className="xl:mb-[60px]">
+    <section className="mb-[60px]">
       {/* <div
         className="thin-scroll overflow-y-auto mt-5"
         style={{ height: 'calc(100% - 70px)' }}

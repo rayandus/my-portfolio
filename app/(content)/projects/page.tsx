@@ -4,7 +4,7 @@ import { GlassCard } from '@/app/common';
 
 const Projects = () => {
   return (
-    <section className="xl:mb-[60px]">
+    <section className="mb-[60px]">
       <div>
         <div className="flex flex-col gap-4 pr-2">
           {projects.map((project) => {

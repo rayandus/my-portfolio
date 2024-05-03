@@ -19,7 +19,7 @@ const ThisSite = () => {
   );
 
   return (
-    <section className="xl:mb-[60px]">
+    <section className="mb-[60px]">
       <GlassCard
         className="h-stretch-vw p-10"
         style={{ minHeight: '738px', height: 'calc(100vh - 120px)' }}

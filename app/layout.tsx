@@ -25,16 +25,11 @@ export default function RootLayout({
         <main className="main">
           <div className="background-image" />
           {/* <div className="fill-available-height w-full flex-none max-w-5xl items-center text-sm lg:flex isolate"> */}
-          <div className="flex min-h-screen flex-col xl:flex-row items-start justify-center gap-4 w-full backdrop-blur-3xl p-16 xl:p-0">
-            <div className="w-full xl:w-fit xl:app-sidebar">
+          <div className="flex flex-row xl:flex-col xl:h-full items-start justify-center gap-4 w-full backdrop-blur-3xl xl:px-16 sm:px-11">
+            <div className="app-sidebar xl:app-sidebar">
               <SideNav />
             </div>
-            <div
-              /* className="flex-grow p-6 md:overflow-y-auto md:p-12" */
-              className="w-full xl:app-content"
-            >
-              {children}
-            </div>
+            <div className="app-content xl:app-content">{children}</div>
           </div>
         </main>
       </body>
@@ -42,6 +37,7 @@ export default function RootLayout({
   );
 }
 
+/* className="flex-grow p-6 md:overflow-y-auto md:p-12" */
 /*
  return (
     <html lang="en">

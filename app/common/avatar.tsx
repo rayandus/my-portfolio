@@ -10,12 +10,8 @@ const Avatar = (props: AvatarProps) => {
   const { className } = props;
 
   return (
-    <div className={clsx(className, 'flex flex-col items-center')}>
-      <Image
-        className="rounded-full relative w-[100px] h-[100px] xl:w-[150px] xl:h-[150px]"
-        src={profileIMage}
-        alt="Profile image"
-      />
+    <div className={clsx(className, 'flex flex-col items-center w-[150px] h-[150px]')}>
+      <Image className="rounded-full relative" src={profileIMage} alt="Profile image" />
     </div>
   );
 };

@@ -27,7 +27,7 @@ const SideNavMenu = () => {
   const pathname = usePathname();
 
   return (
-    <ul className="menu menu-horizontal justify-center xl:menu-vertical gap-2">
+    <ul className="menu menu-vertical xl:menu-horizontal justify-center gap-2">
       {links.map((link) => {
         const LinkIcon = link.icon;
 

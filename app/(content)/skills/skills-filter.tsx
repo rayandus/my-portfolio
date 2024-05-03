@@ -118,28 +118,30 @@ const SkillsFilter = (props: SkillsFilterProps) => {
   }, [activeFilters]);
 
   return (
-    <div className={clsx(className, 'flex flex-col items-center gap-2')}>
-      <div className="tooltip" data-tip="Skills Filter">
-        <FunnelFill />
-      </div>
-      <div className="flex justify-center join join-vertical">
-        {mappedOptions.map((option) => {
-          const { displayName, icon, isActive } = option;
+    <div className={className}>
+      <div className="flex flex-col items-center m-[5px] gap-2">
+        <div className="tooltip" data-tip="Skills Filter">
+          <FunnelFill />
+        </div>
+        <div className="flex justify-center join join-vertical">
+          {mappedOptions.map((option) => {
+            const { displayName, icon, isActive } = option;
 
-          return (
-            <button
-              key={displayName}
-              className={clsx(
-                'btn btn-outline btn-sm join-item tooltip',
-                isActive && 'btn-active',
-              )}
-              onClick={() => handleSelect(option.category)}
-              data-tip={displayName}
-            >
-              {icon}
-            </button>
-          );
-        })}
+            return (
+              <button
+                key={displayName}
+                className={clsx(
+                  'btn btn-outline btn-sm join-item tooltip',
+                  isActive && 'btn-active',
+                )}
+                onClick={() => handleSelect(option.category)}
+                data-tip={displayName}
+              >
+                {icon}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -45,7 +45,7 @@ const Skills = () => {
         onChange={handleFilterChange}
         defaultActiveSkillsCategories={defaultActiveSkillsCategoriesValues}
       />
-      <section className="xl:mb-[60px] flex flex-col gap-4">
+      <section className="mb-[60px] flex flex-col gap-4">
         {activeFilters
           .filter((activeFilter) => activeFilter.isActive)
           .map((activeFilter) => {

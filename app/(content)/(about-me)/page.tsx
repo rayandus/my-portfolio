@@ -19,10 +19,10 @@ const professionalAttributes = [
 
 const Home = () => {
   return (
-    <section className="xl:mb-[60px]">
+    <section className="mb-[60px]">
       <GlassCard
-        className="h-stretch-vw p-5"
-        style={{ minHeight: '738px', height: 'calc(100vh - 120px)' }}
+        className="h-stretch-vw p-5 min-h-[738px] h-[calc(100vh - 120px)] xl:min-h-0 xl:h-fit"
+        // style={{ height: '' }}
       >
         <div className="text-l p-8">
           <span className="block text-xl">I am Ray and I am...</span>

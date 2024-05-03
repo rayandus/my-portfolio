@@ -30,7 +30,7 @@ const AttributeRandomizer = (props: AttributeRandomizerProps) => {
     <span
       className={clsx(
         fadeIn ? 'fade-in' : 'fade-out',
-        'flex justify-center items-center m-10 text-6xl font-extrabold text-center min-h-40',
+        'flex justify-center items-center my-10 sm:my-4 text-6xl sm:text-5xl font-extrabold text-center min-h-40',
       )}
     >
       “ {attribute} ”

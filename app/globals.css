@@ -117,31 +117,33 @@ body {
 }
 
 @layer components {
-  /* .app-sidebar {
-    margin-top: 60px;
+  .app-sidebar {
+    position: sticky;
+    top: 60px;
+    margin-bottom: 60px;
+    width: fit;
+    z-index: 1;
   }
+  
   .app-content {
-    width: 100%;
-  } */
+    position: relative;
+    width: 700px;
+    top: 60px;
+    margin-bottom: 60px;
+    z-index: 1;
+  }
+
+  .app-h-calc-vh {
+    min-height: calc(100vh - 120px);
+  }
 
   @screen xl {
     .app-sidebar {
-      position: sticky;
-      top: 60px;
-      margin-bottom: 60px;
-      z-index: 1;
+      @apply relative mb-1 w-full
     }
     
     .app-content {
-      position: relative;
-      width: 700px;
-      top: 60px;
-      margin-bottom: 60px;
-      z-index: 1;
-    }
-
-    .app-h-calc-vh {
-      min-height: calc(100vh - 120px);
+      @apply w-full
     }
   }
 }
