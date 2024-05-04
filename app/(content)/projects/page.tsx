@@ -1,6 +1,11 @@
+import { Metadata } from 'next';
 import { projects } from '@/app/data/projects';
 import TechStack from './tech-stack';
 import { GlassCard } from '@/app/common';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+};
 
 const Projects = () => {
   return (

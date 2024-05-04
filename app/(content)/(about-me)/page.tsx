@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { EmojiSmile } from 'react-bootstrap-icons';
 import { GlassCard } from '@/app/common';
 import AttributeRandomizer from './attribute-randomizer';
@@ -16,6 +17,10 @@ const professionalAttributes = [
   'a goer for the extra mile',
   'empathic',
 ];
+
+export const metadata: Metadata = {
+  title: 'About Me',
+};
 
 const Home = () => {
   return (
