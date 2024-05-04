@@ -41,26 +41,26 @@ const Skills = () => {
   return (
     <>
       <SkillsFilter
-        className="sticky-floating-filter"
+        className="sticky-floating-filter sm:sticky-floating-filter"
         onChange={handleFilterChange}
         defaultActiveSkillsCategories={defaultActiveSkillsCategoriesValues}
       />
-      <section className="mb-[60px] flex flex-col gap-4">
+      <section className="flex flex-col mb-[60px] gap-4 sm:gap-0">
         {activeFilters
           .filter((activeFilter) => activeFilter.isActive)
           .map((activeFilter) => {
             return (
               <GlassCard
                 key={activeFilter.category}
-                className="p-5"
+                className="p-5 sm:rounded-none sm:shadow-none sm:ring-1"
                 // className="thin-scroll overflow-y-auto mt-5"
                 // style={{ height: 'calc(100% - 70px)' }}
               >
-                <div className="font-medium text-lg flex gap-2 justify-center items-center">
+                <div className="px-2 font-medium text-lg flex gap-2 justify-center items-center">
                   {activeFilter.icon}
                   <span>{activeFilter.displayName}</span>
                 </div>
-                <div className="grid grid-cols-3 grid-flow-row gap-20 fill-available-width p-[40px]">
+                <div className="grid grid-cols-3 sm:grid-cols-4 grid-flow-row gap-20 sm:gap-6 fill-available-width p-[40px] pb-[5px]">
                   {filteredSkillsList
                     .filter((skill) => skill.category === activeFilter.category)
                     .map((skill) => {
@@ -69,16 +69,17 @@ const Skills = () => {
                       return (
                         <div
                           key={`${displayName}-${category}`}
-                          className="flex justify-self-center items-center flex-col gap-2 min-w-[100px] max-w-[100px]"
+                          // min-w-[100px] max-w-[100px]
+                          className="flex justify-self-center items-center flex-col gap-2"
                         >
                           <Image
-                            className="rounded-lg w-fit"
+                            className="rounded-lg w-fit h-[100px] sm:h-[70px]"
                             src={iconPath}
                             alt={displayName}
                             width={0}
                             height={0}
                             sizes="100px"
-                            style={{ height: '100px' }}
+                            // style={{ height: '100px' }}
                           />
                           <span className="font-bold text-center">{displayName}</span>
                         </div>

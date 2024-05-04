@@ -7,14 +7,14 @@ interface ContentProps {
   children?: React.ReactNode;
 }
 
-const GlassCard = (props: ContentProps) => {
+const GlassCard2 = (props: ContentProps) => {
   const { className, style, children } = props;
 
   return (
     <div
       className={clsx(
         className,
-        'h-inherit flex flex-col grow rounded-xl bg-white/[0.03] backdrop-blur-xl ring-1 ring-inset ring-white/[0.11] shadow-lg',
+        'h-inherit flex flex-col grow rounded-xl bg-white/20 ring-1 ring-inset ring-white/[0.11] shadow-lg',
       )}
       style={style}
     >
@@ -33,4 +33,4 @@ const GlassCard = (props: ContentProps) => {
   );
 };
 
-export default GlassCard;
+export default GlassCard2;

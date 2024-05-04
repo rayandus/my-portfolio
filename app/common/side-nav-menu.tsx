@@ -3,13 +3,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import {
-  Briefcase,
-  Diagram3,
-  PersonRaisedHand,
-  QuestionCircle,
-  VectorPen,
-} from 'react-bootstrap-icons';
+import { Briefcase, Diagram3, PersonRaisedHand, VectorPen } from 'react-bootstrap-icons';
 
 const links = [
   { name: 'About Me', href: '/', icon: PersonRaisedHand },
@@ -20,14 +14,24 @@ const links = [
   },
   { name: ' Work Experience', href: '/work-experience', icon: Briefcase },
   { name: 'Projects', href: '/projects', icon: Diagram3 },
-  { name: 'This Site', href: '/this-site', icon: QuestionCircle },
 ];
 
-const SideNavMenu = () => {
+interface SideNavMenuProps {
+  className?: string;
+}
+
+const SideNavMenu = (props: SideNavMenuProps) => {
+  const { className } = props;
+
   const pathname = usePathname();
 
   return (
-    <ul className="menu menu-vertical xl:menu-horizontal justify-center gap-2">
+    <ul
+      className={clsx(
+        className,
+        'menu menu-vertical w-full xl:menu-horizontal justify-center gap-2',
+      )}
+    >
       {links.map((link) => {
         const LinkIcon = link.icon;
 
@@ -43,7 +47,7 @@ const SideNavMenu = () => {
               )}
             >
               <LinkIcon size={20} />
-              <span>{link.name}</span>
+              <span className="sm:hidden">{link.name}</span>
             </Link>
           </li>
         );

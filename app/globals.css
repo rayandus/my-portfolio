@@ -136,6 +136,18 @@ body {
   .app-h-calc-vh {
     min-height: calc(100vh - 120px);
   }
+  
+  .sticky-floating-filter {
+    float: right;
+    position: sticky;
+    top: 60px;
+    right: 0;
+    margin-right: -55px;
+  }
+
+  .shimmer {
+    @apply before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent
+  }
 
   @screen xl {
     .app-sidebar {
@@ -144,6 +156,24 @@ body {
     
     .app-content {
       @apply w-full
+    }
+  }
+
+  @screen sm {
+    .app-sidebar {
+      @apply fixed top-0 mb-0 z-10 backdrop-blur-xl
+    }
+    
+    .app-content {
+      @apply w-full overflow-y-auto top-[112px] mb-[64px]
+    }
+    
+    .shadow-lg-inverse {
+      box-shadow: 0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+    
+    .sticky-floating-filter {
+      @apply fixed bottom-[65px] h-fit mr-0 mt-auto z-10
     }
   }
 }
@@ -183,12 +213,4 @@ body {
   height: calc(100% - 120px);
   min-height: calc(100% - 120px);
   max-height: calc(100% - 120px);
-}
-
-.sticky-floating-filter {
-  float: right;
-  position: sticky;
-  top: 60px;
-  right: 0;
-  margin-right: -55px;
 }

@@ -1,10 +1,4 @@
-import {
-  EnvelopeAtFill,
-  Linkedin,
-  Github,
-  Medium,
-  Wordpress,
-} from 'react-bootstrap-icons';
+import { EnvelopeAtFill, Linkedin, Github } from 'react-bootstrap-icons';
 
 export const socialMedia = [
   {
@@ -17,16 +11,16 @@ export const socialMedia = [
     icon: Github,
     link: 'https://github.com/rayandus',
   },
-  {
-    displayName: 'Medium',
-    icon: Medium,
-    link: 'https://medium.com/@ray.an',
-  },
-  {
-    displayName: 'Wordpress',
-    icon: Wordpress,
-    link: 'https://codetella.wordpress.com/',
-  },
+  // {
+  //   displayName: 'Medium',
+  //   icon: Medium,
+  //   link: 'https://medium.com/@ray.an',
+  // },
+  // {
+  //   displayName: 'Wordpress',
+  //   icon: Wordpress,
+  //   link: 'https://codetella.wordpress.com/',
+  // },
   {
     displayName: 'Email',
     icon: EnvelopeAtFill,

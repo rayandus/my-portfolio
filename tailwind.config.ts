@@ -29,6 +29,11 @@ const config: Config = {
           '50%': { opacity: '1' },
           '100%': { opacity: '0' },
         },
+        shimmer: {
+          '100%': {
+            transform: 'translateX(100%)',
+          },
+        },
       },
     },
   },

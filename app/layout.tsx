@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/app/globals.css';
-import { SideNav } from '@/app/common';
+import { GlassCard, SideNav, SideNavMenu } from '@/app/common';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,13 +23,20 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         {/* flex min-h-screen flex-row overflow-auto items-center justify-center */}
         <main className="main">
-          <div className="background-image" />
+          <div className="background-image">
+            <div className="w-full h-full backdrop-blur-3xl"></div>
+          </div>
           {/* <div className="fill-available-height w-full flex-none max-w-5xl items-center text-sm lg:flex isolate"> */}
-          <div className="flex flex-row xl:flex-col xl:h-full items-start justify-center gap-4 w-full backdrop-blur-3xl xl:px-16 sm:px-11">
-            <div className="app-sidebar xl:app-sidebar">
+          <div className="flex flex-row xl:flex-col xl:h-full items-start justify-center gap-4 w-full xl:px-16 md:px-11 sm:px-0">
+            <div className="app-sidebar xl:app-sidebar sm:app-sidebar">
               <SideNav />
             </div>
             <div className="app-content xl:app-content">{children}</div>
+            <div className="hidden sm:flex fixed bottom-0 z-10 w-full">
+              <GlassCard className="!rounded-none !shadow-lg-inverse">
+                <SideNavMenu />
+              </GlassCard>
+            </div>
           </div>
         </main>
       </body>

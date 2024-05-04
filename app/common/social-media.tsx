@@ -4,10 +4,11 @@ import clsx from 'clsx';
 
 interface SocialMediaProps {
   className?: string;
+  showTitle?: boolean;
 }
 
 const SocialMedia = (props: SocialMediaProps) => {
-  const { className } = props;
+  const { className, showTitle } = props;
 
   return (
     // md:flex-none md:p-2 md:px-3
@@ -18,13 +19,14 @@ const SocialMedia = (props: SocialMediaProps) => {
         return (
           <Link
             key={displayName}
-            className="tooltip"
+            className="tooltip flex gap-2"
             href={link}
             rel="noopener noreferrer"
             target="_blank"
             data-tip={displayName}
           >
             <Icon size={20} />
+            {showTitle && <span>{displayName}</span>}
           </Link>
         );
       })}
