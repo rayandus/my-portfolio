@@ -1,8 +1,13 @@
+import { Metadata } from 'next';
 import { CheckCircleFill } from 'react-bootstrap-icons';
 import { workExperiences } from '@/app/data/work-experience';
 import dayjs from 'dayjs';
 import RoleDetails from './role-details';
 import { GlassCard } from '@/app/common';
+
+export const metadata: Metadata = {
+  title: 'Work Experience',
+};
 
 const WorkExperience = () => {
   return (

@@ -1,7 +1,12 @@
+import { Metadata } from 'next';
+import Image from 'next/image';
 import { GlassCard } from '@/app/common';
 import { skillsList } from '@/app/data';
-import Image from 'next/image';
 import { EmojiSmileUpsideDownFill, Github, HeartFill } from 'react-bootstrap-icons';
+
+export const metadata: Metadata = {
+  title: 'This Site',
+};
 
 const techStackUsed = [
   'Nextjs',
