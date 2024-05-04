@@ -1,69 +1,83 @@
 'use client';
 
+import { SkillsCategoryEnum } from '@/app/types';
+
 import { useCallback, useMemo, useState } from 'react';
-import { Cloud, Database, Display, HddRack, ThreeDots } from 'react-bootstrap-icons';
+import {
+  Cloud,
+  Database,
+  Display,
+  FunnelFill,
+  HddRack,
+  ThreeDots,
+} from 'react-bootstrap-icons';
 import clsx from 'clsx';
 
-export enum SkillsCategory {
-  FRONTEND = 'frontend',
-  BACKEND = 'backend',
-  DATABASE = 'database',
-  CLOUD = 'cloud',
-  OTHERS = 'others',
+export interface SkillsCategory {
+  displayName: string;
+  icon: React.ReactNode;
+  category: SkillsCategoryEnum;
+  isActive: boolean;
 }
 
-const options = [
+export const skillsCategoryOptions: SkillsCategory[] = [
   {
     displayName: 'Front-end',
     icon: <Display />,
-    value: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     isActive: false,
   },
   {
     displayName: 'Back-end',
     icon: <HddRack />,
-    value: SkillsCategory.BACKEND,
+    category: SkillsCategoryEnum.BACKEND,
     isActive: false,
   },
   {
     displayName: 'Database',
     icon: <Database />,
-    value: SkillsCategory.DATABASE,
+    category: SkillsCategoryEnum.DATABASE,
     isActive: false,
   },
   {
     displayName: 'Cloud',
     icon: <Cloud />,
-    value: SkillsCategory.CLOUD,
+    category: SkillsCategoryEnum.CLOUD,
     isActive: false,
   },
   {
     displayName: 'Others',
     icon: <ThreeDots />,
-    value: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     isActive: false,
   },
 ];
 
 interface SkillsFilterProps {
+  className?: string;
+  defaultActiveSkillsCategories?: SkillsCategoryEnum[];
   onChange?: (activeSkillsCategory: SkillsCategory[]) => void;
 }
 
 const SkillsFilter = (props: SkillsFilterProps) => {
-  const { onChange = () => {} } = props;
+  const { className, defaultActiveSkillsCategories = [], onChange = () => {} } = props;
 
-  const defaultFilters = useMemo(() => {
-    return options.map((option) => ({
-      category: option.value,
-      isActive: option.isActive,
-    }));
-  }, []);
+  const defaultActiveFilters = useMemo(() => {
+    return skillsCategoryOptions
+      .filter((option) => defaultActiveSkillsCategories.includes(option.category))
+      .map((option) => {
+        return {
+          ...option,
+          isActive: true,
+        };
+      });
+  }, [defaultActiveSkillsCategories]);
 
   const [activeFilters, setActiveFilters] =
-    useState<{ category: SkillsCategory; isActive: boolean }[]>(defaultFilters);
+    useState<SkillsCategory[]>(defaultActiveFilters);
 
   const handleSelect = useCallback(
-    (category: SkillsCategory) => {
+    (category: SkillsCategoryEnum) => {
       setActiveFilters((prevValue) => {
         const updatedValue = prevValue.map((value) => {
           if (category !== value.category) {
@@ -76,9 +90,11 @@ const SkillsFilter = (props: SkillsFilterProps) => {
           };
         });
 
-        const filteredValue = updatedValue
-          .filter((value) => value.isActive)
-          .map((value) => value.category);
+        const filteredValue = updatedValue.filter((value) => value.isActive);
+
+        if (!filteredValue.length) {
+          return prevValue;
+        }
 
         onChange(filteredValue);
 
@@ -89,9 +105,9 @@ const SkillsFilter = (props: SkillsFilterProps) => {
   );
 
   const mappedOptions = useMemo(() => {
-    return options.map((option) => {
+    return skillsCategoryOptions.map((option) => {
       const matchedActiveFilter = activeFilters?.find(
-        (filter) => filter.category === option.value,
+        (filter) => filter.category === option.category,
       );
 
       return {
@@ -102,24 +118,30 @@ const SkillsFilter = (props: SkillsFilterProps) => {
   }, [activeFilters]);
 
   return (
-    <div>
-      <div className="flex justify-center join">
-        {mappedOptions.map((option) => {
-          const { displayName, icon, isActive } = option;
-          return (
-            <button
-              key={displayName}
-              className={clsx(
-                'btn btn-outline btn-sm join-item',
-                isActive && 'btn-active',
-              )}
-              onClick={() => handleSelect(option.value)}
-            >
-              {icon}
-              {displayName}
-            </button>
-          );
-        })}
+    <div className={className}>
+      <div className="flex flex-col items-center m-[5px] gap-2">
+        <div className="tooltip" data-tip="Skills Filter">
+          <FunnelFill />
+        </div>
+        <div className="flex justify-center join join-vertical">
+          {mappedOptions.map((option) => {
+            const { displayName, icon, isActive } = option;
+
+            return (
+              <button
+                key={displayName}
+                className={clsx(
+                  'btn btn-outline btn-sm join-item tooltip',
+                  isActive && 'btn-active',
+                )}
+                onClick={() => handleSelect(option.category)}
+                data-tip={displayName}
+              >
+                {icon}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

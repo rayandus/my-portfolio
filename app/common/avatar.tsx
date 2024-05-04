@@ -1,16 +1,17 @@
+import clsx from 'clsx';
 import Image from 'next/image';
+import profileIMage from '@/public/profile-image.jpg';
 
-const Avatar = () => {
+interface AvatarProps {
+  className?: string;
+}
+
+const Avatar = (props: AvatarProps) => {
+  const { className } = props;
+
   return (
-    <div className="flex flex-col items-center">
-      <Image
-        className="rounded-full"
-        src="/profile-image.jpg"
-        width={150}
-        height={150}
-        // className="hidden md:block"
-        alt="Profile image"
-      />
+    <div className={clsx(className, 'flex flex-col items-center w-[150px] h-[150px]')}>
+      <Image className="rounded-full relative" src={profileIMage} alt="Profile image" />
     </div>
   );
 };

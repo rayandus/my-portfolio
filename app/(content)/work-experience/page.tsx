@@ -2,15 +2,17 @@ import { CheckCircleFill } from 'react-bootstrap-icons';
 import { workExperiences } from '@/app/data/work-experience';
 import dayjs from 'dayjs';
 import RoleDetails from './role-details';
+import { GlassCard } from '@/app/common';
 
 const WorkExperience = () => {
   return (
-    <section className="h-inherit">
-      <div
+    <section className="mb-[60px]">
+      {/* <div
         className="thin-scroll overflow-y-auto mt-5"
         style={{ height: 'calc(100% - 70px)' }}
-      >
-        <ul className="timeline timeline-vertical timeline-left timeline-snap-icon ">
+      > */}
+      <GlassCard className="p-5">
+        <ul className="timeline timeline-vertical timeline-left timeline-snap-icon py-8">
           {workExperiences.map((workExperience, index) => {
             const { companyName, companyHq, roles } = workExperience;
 
@@ -38,7 +40,7 @@ const WorkExperience = () => {
                   <CheckCircleFill size={18} />
                 </div>
                 <div className="timeline-end">
-                  <div className="timeline-box rounded-xl w-max">
+                  <div className="timeline-box rounded-xl w-fit">
                     <span className="font-bold mr-2">{`${companyName}, ${companyHq}`}</span>
                     {totalYears >= 1 ? (
                       <span className="badge badge-ghost rounded-md">{`${totalYears} ${totalYears > 1 ? 'years' : 'year'}`}</span>
@@ -53,7 +55,7 @@ const WorkExperience = () => {
             );
           })}
         </ul>
-      </div>
+      </GlassCard>
     </section>
   );
 };

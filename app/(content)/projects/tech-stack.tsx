@@ -9,7 +9,7 @@ const TechStack = (props: TechStackProps) => {
   const { stack = [] } = props;
 
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-wrap gap-4">
       {stack.map((tech) => {
         const matchedSkill = skillsList.find((skill) => skill.displayName === tech);
 
@@ -20,7 +20,7 @@ const TechStack = (props: TechStackProps) => {
         return (
           <div
             key={matchedSkill.displayName}
-            className="tooltip"
+            className="tooltip min-w-[30px] max-w-[30px]"
             data-tip={matchedSkill.displayName}
           >
             <Image

@@ -1,10 +1,10 @@
-import { SkillsCategory } from '@/app/(content)/skills/skills-filter';
+import { SkillsCategoryEnum } from '@/app/types';
 
 export const skillsList = [
   {
     displayName: 'Reactjs',
     iconPath: '/reactjs.png',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 4,
     yearStarted: '2020',
     yearEnded: 'present',
@@ -13,7 +13,7 @@ export const skillsList = [
   {
     displayName: 'Nextjs',
     iconPath: '/nextjs.png',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 1,
     yearStarted: '2024',
     yearEnded: 'present',
@@ -22,7 +22,7 @@ export const skillsList = [
   {
     displayName: 'Typescript',
     iconPath: '/typescript.png',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -31,7 +31,7 @@ export const skillsList = [
   {
     displayName: 'React Query',
     iconPath: '/react-query.svg',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -40,7 +40,7 @@ export const skillsList = [
   {
     displayName: 'Javascript',
     iconPath: '/javascript.png',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 12,
     yearStarted: '2012',
     yearEnded: 'present',
@@ -49,7 +49,7 @@ export const skillsList = [
   {
     displayName: 'HTML',
     iconPath: '/html.png',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 12,
     yearStarted: '2012',
     yearEnded: 'present',
@@ -58,7 +58,7 @@ export const skillsList = [
   {
     displayName: 'CSS',
     iconPath: '/css.png',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 12,
     yearStarted: '2012',
     yearEnded: 'present',
@@ -67,7 +67,7 @@ export const skillsList = [
   {
     displayName: 'jQuery',
     iconPath: '/jquery.png',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 4,
     yearStarted: '2012',
     yearEnded: '2016',
@@ -76,7 +76,7 @@ export const skillsList = [
   {
     displayName: 'AntDesign',
     iconPath: '/ant-design.svg',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -85,7 +85,7 @@ export const skillsList = [
   {
     displayName: 'Bootstrap',
     iconPath: '/bootstrap.webp',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 3,
     yearStarted: '2015',
     yearEnded: 'present',
@@ -94,7 +94,7 @@ export const skillsList = [
   {
     displayName: 'Material UI',
     iconPath: '/material-ui.svg',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 3,
     yearStarted: '2015',
     yearEnded: 'present',
@@ -103,16 +103,34 @@ export const skillsList = [
   {
     displayName: 'Emotion',
     iconPath: '/emotion.png',
-    category: SkillsCategory.FRONTEND,
+    category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
     isVisible: true,
   },
   {
+    displayName: 'Tailwind',
+    iconPath: '/tailwind.png',
+    category: SkillsCategoryEnum.FRONTEND,
+    yearsOfExperience: 1,
+    yearStarted: '2024',
+    yearEnded: 'present',
+    isVisible: true,
+  },
+  {
+    displayName: 'Daisy UI',
+    iconPath: '/daisyui.png',
+    category: SkillsCategoryEnum.FRONTEND,
+    yearsOfExperience: 1,
+    yearStarted: '2024',
+    yearEnded: 'present',
+    isVisible: true,
+  },
+  {
     displayName: 'Nodejs',
     iconPath: '/nodejs.png',
-    category: SkillsCategory.BACKEND,
+    category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -121,7 +139,7 @@ export const skillsList = [
   {
     displayName: 'Expressjs',
     iconPath: '/expressjs.png',
-    category: SkillsCategory.BACKEND,
+    category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -130,7 +148,7 @@ export const skillsList = [
   {
     displayName: 'Nestjs',
     iconPath: '/nestjs.svg',
-    category: SkillsCategory.BACKEND,
+    category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 1,
     yearStarted: '2023',
     yearEnded: 'present',
@@ -139,7 +157,7 @@ export const skillsList = [
   {
     displayName: 'Typescript',
     iconPath: '/typescript.png',
-    category: SkillsCategory.BACKEND,
+    category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -148,7 +166,7 @@ export const skillsList = [
   {
     displayName: 'PHP',
     iconPath: '/php.png',
-    category: SkillsCategory.BACKEND,
+    category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 8,
     yearStarted: '2011',
     yearEnded: '2019',
@@ -157,7 +175,7 @@ export const skillsList = [
   {
     displayName: 'MongoDB',
     iconPath: '/mongodb.png',
-    category: SkillsCategory.DATABASE,
+    category: SkillsCategoryEnum.DATABASE,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -166,7 +184,7 @@ export const skillsList = [
   {
     displayName: 'PostgreSQL',
     iconPath: '/postgresql.png',
-    category: SkillsCategory.DATABASE,
+    category: SkillsCategoryEnum.DATABASE,
     yearsOfExperience: 2,
     yearStarted: '2018',
     yearEnded: '2020',
@@ -175,7 +193,7 @@ export const skillsList = [
   {
     displayName: 'MSSQL',
     iconPath: '/mssql.png',
-    category: SkillsCategory.DATABASE,
+    category: SkillsCategoryEnum.DATABASE,
     yearsOfExperience: 6,
     yearStarted: '2011',
     yearEnded: '2017',
@@ -184,7 +202,7 @@ export const skillsList = [
   {
     displayName: 'Azure',
     iconPath: '/azure.png',
-    category: SkillsCategory.CLOUD,
+    category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 6,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -193,7 +211,7 @@ export const skillsList = [
   {
     displayName: 'Azure DevOps',
     iconPath: '/azure-devops.png',
-    category: SkillsCategory.CLOUD,
+    category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 6,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -202,7 +220,7 @@ export const skillsList = [
   {
     displayName: 'Azure SignalR',
     iconPath: '/azure-signalr.png',
-    category: SkillsCategory.CLOUD,
+    category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 1,
     yearStarted: '2022',
     yearEnded: '2023',
@@ -211,7 +229,7 @@ export const skillsList = [
   {
     displayName: 'Azure Functions',
     iconPath: '/azure-functions.png',
-    category: SkillsCategory.CLOUD,
+    category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 1,
     yearStarted: '2022',
     yearEnded: '2023',
@@ -220,7 +238,7 @@ export const skillsList = [
   {
     displayName: 'Azure CosmosDB',
     iconPath: '/azure-cosmosdb.png',
-    category: SkillsCategory.DATABASE,
+    category: SkillsCategoryEnum.DATABASE,
     yearsOfExperience: 1,
     yearStarted: '2022',
     yearEnded: '2023',
@@ -229,7 +247,7 @@ export const skillsList = [
   {
     displayName: 'Azure Storage Accounts',
     iconPath: '/azure-storage-accounts.webp',
-    category: SkillsCategory.CLOUD,
+    category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -238,7 +256,7 @@ export const skillsList = [
   {
     displayName: 'AWS',
     iconPath: '/aws.webp',
-    category: SkillsCategory.CLOUD,
+    category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 6,
     yearStarted: '2018',
     yearEnded: '2020',
@@ -247,7 +265,7 @@ export const skillsList = [
   {
     displayName: 'Netlify',
     iconPath: '/netlify.png',
-    category: SkillsCategory.CLOUD,
+    category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 6,
     yearStarted: '2020',
     yearEnded: '2021',
@@ -256,7 +274,7 @@ export const skillsList = [
   {
     displayName: 'Github',
     iconPath: '/github.png',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 9,
     yearStarted: '2016',
     yearEnded: 'present',
@@ -265,7 +283,7 @@ export const skillsList = [
   {
     displayName: 'CI/CD',
     iconPath: '/cicd.png',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 5,
     yearStarted: '2020',
     yearEnded: 'present',
@@ -274,7 +292,7 @@ export const skillsList = [
   {
     displayName: 'Jest',
     iconPath: '/jest.png',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 5,
     yearStarted: '2020',
     yearEnded: 'present',
@@ -283,7 +301,7 @@ export const skillsList = [
   {
     displayName: 'Jira',
     iconPath: '/jira.svg',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 5,
     yearStarted: '2020',
     yearEnded: 'present',
@@ -292,7 +310,7 @@ export const skillsList = [
   {
     displayName: 'Draw.io',
     iconPath: '/drawio.png',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 5,
     yearStarted: '2020',
     yearEnded: 'present',
@@ -301,7 +319,7 @@ export const skillsList = [
   {
     displayName: 'React JSON Schema',
     iconPath: '/react-json-schema.png',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 3,
     yearStarted: '2021',
     yearEnded: 'present',
@@ -310,7 +328,7 @@ export const skillsList = [
   {
     displayName: 'X State',
     iconPath: '/xstate.png',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 1,
     yearStarted: '2022',
     yearEnded: '2023',
@@ -319,7 +337,7 @@ export const skillsList = [
   {
     displayName: 'PubNub',
     iconPath: '/pubnub.png',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 1,
     yearStarted: '2022',
     yearEnded: '2023',
@@ -328,7 +346,7 @@ export const skillsList = [
   {
     displayName: 'Sentry',
     iconPath: '/sentry.png',
-    category: SkillsCategory.OTHERS,
+    category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 1,
     yearStarted: '2021',
     yearEnded: 'present',
