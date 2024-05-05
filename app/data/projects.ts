@@ -287,4 +287,145 @@ export const projects = [
       'Azure SignalR',
     ],
   },
+  {
+    company: 'Nexity Technologies',
+    project: 'CoViD-19 Contact Tracing Portal for a Local Government Unit',
+    startDate: 'January 2020',
+    endDate: 'February 2021',
+    description:
+      'A corporate social responsibility project aiming to provide Cebu City Government a portal to view and monitor establishment visitor logs for the purpose of contact tracing people and control the further spread of CoViD-19 in the region.',
+    participation:
+      'As development tech lead • analysis of MVP requirements and translation to technical specifications • ensures that specific requirements for the portal are sifted out from the overall requirement that is mostly focused on client-side mobile app.',
+    techStack: ['Reactjs', 'Material UI', 'CSS', 'Javascript', 'Netlify'],
+  },
+  {
+    company: 'Nexity Technologies',
+    project: 'Finance Hub/ Admin Portal',
+    startDate: 'May 2020',
+    endDate: 'February 2021',
+    description:
+      'Admin Hub/Portal where users can view their wallet, transactions, do disbursements, fund transfers, and manage own pool of clients or merchant users.',
+    participation:
+      'As development tech lead • analysis and translation of MVP requirements to tasks and wireframes • manages dependencies with other teams • reviews and tests code changes before merging • identifies code improvements that need refactoring • ensures process and quality adherence.',
+    techStack: ['Reactjs', 'Material UI', 'CSS', 'Javascript', 'Netlify'],
+  },
+  {
+    company: 'Nexity Technologies',
+    project: 'Inbox API',
+    startDate: 'May 2020',
+    endDate: 'February 2021',
+    description:
+      'A messaging api that works like a chat or email. It is used for information drive, broadcasting, and communication to wallet app users. This feature is integrated in aforementioned projects.',
+    participation:
+      'Responsible for the initial technical design and development of Inbox/Messaging microservice and creation of local and integration test codes.',
+    techStack: ['Go', 'GCP Cloud Functions', 'GCP Firestore'],
+  },
+  {
+    company: 'Navagis, LLC',
+    project: 'Enterprise Mapping Application for Globe Telecom',
+    startDate: 'January 2018',
+    endDate: 'January 2020',
+    description:
+      'A 3-tier mapping application comprised of web-based portal, APIs, multiple databases. The application is used by all branches and head office units of Globe Telecom. The web-based application provides internet serviceability insights to store fronts and serviceability reports to business.',
+    participation:
+      'Assists in crafting technical and business innovations roadmap with product managers • management of L2, L3 tech support and service level processes • cost reduction initiatives (server resources, Google credits) which included code refactoring • ensures smooth and successful bi-monthly cutover and ad hoc deployments •  fills in the software development lead position on top of being the project manager.',
+    techStack: [
+      'PHP',
+      'Python',
+      'Javascript',
+      'jQuery',
+      'CSS',
+      'AWS EC2 (Elastic Compute)',
+      'AWS ELB (Elastic Load Balancer)',
+      'AWS RDS (Relational Database Service)',
+      'AWS Auto Scale',
+      'PostgreSQL',
+    ],
+  },
+  {
+    company: 'Navagis, LLC',
+    project: 'Wireline/Wireless Internet Serviceability APIs',
+    startDate: 'January 2018',
+    endDate: 'January 2020',
+    description:
+      'Multiple APIs that provide serviceability data and serviceability-based internet plans to both internal and public customers.',
+    participation:
+      'Creation of technical documents • design of technical specifications and integration plan • management of technical support • as software development lead • manages cutover deployments',
+    techStack: [
+      'PHP',
+      'Lumen by Laravel',
+      'AWS EC2 (Elastic Compute)',
+      'AWS ELB (Elastic Load Balancer)',
+      'AWS RDS (Relational Database Service)',
+      'AWS Auto Scale',
+      'PostgreSQL',
+    ],
+  },
+  {
+    company: 'Navagis, LLC',
+    project: 'Wireline/Wireless  Serviceability Microsite and Widget',
+    startDate: 'August 2018',
+    endDate: 'January 2020',
+    description:
+      'Microsite and Widget that offer serviceability capability to public users giving them the power and convenience to check internet availability at the comfort of their homes. The microsite is a standalone web-based serviceability application, while the Widget is embedded in the marketing website.',
+    participation:
+      'Requirements gathering & analysis • management of technical support • as software development lead for succeeding enhancements',
+    techStack: ['Reactjs', 'CSS'],
+  },
+  {
+    company: 'UnionBank of the Philippines',
+    project: 'GetGo Debit Cards Branch Facility & API',
+    startDate: 'November 2015',
+    endDate: 'May 2016',
+    description:
+      'A web-based application where branch users can check and supplement customer information during KYCs (Know-Your-Customer). Customer online applications via UnionBank website is captured and fed into the system through an API.',
+    participation:
+      'Collection of requirements from various operations units and branches • streamlining of existing KYC processes; direct coordination with third-party developers on API integration phases • post-production application support and maintenance',
+    techStack: [
+      'PHP',
+      'CodeIgniter',
+      'Javascript',
+      'jQuery',
+      'Bootstrap',
+      'CSS',
+      'MSSQL',
+    ],
+  },
+  {
+    company: 'UnionBank of the Philippines',
+    project: 'Loans System (outlet site and a main processing facility)',
+    startDate: 'August 2015',
+    endDate: 'December 2015',
+    description:
+      'The first in-house loans system of CitySavings Bank (a UnionBank subsidiary) which significantly improved the turn around time from 1-2 days to within 2 hours per application.',
+    participation:
+      'Pioneer of the first 2 phases • supports deployment, bank-wide testing, & periodic enterprise exercises • implementation of major post-production enhancements • streamlining of processes with business clients • works with in-house developers for data integration parts.',
+    techStack: [
+      'PHP',
+      'CodeIgniter',
+      'Javascript',
+      'jQuery',
+      'Bootstrap',
+      'CSS',
+      'MSSQL',
+    ],
+  },
+  {
+    company: 'UnionBank of the Philippines',
+    project: 'Other Projects',
+    startDate: 'April 2011',
+    endDate: 'December 2017',
+    description: '16 more projects to be detailed soon',
+    participation:
+      'Mostly spearheaded the projects • Gathered requirements • Designed the UX • Designed the architecture • Implementation • Participated in streamlining discussions',
+    techStack: [
+      'PHP',
+      'CodeIgniter',
+      'Javascript',
+      'jQuery',
+      'Bootstrap',
+      'CSS',
+      'MSSQL',
+    ],
+  },
 ];
