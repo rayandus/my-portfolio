@@ -10,7 +10,11 @@ export const metadata: Metadata = {
     template: '%s | Ray Anthony Andus',
     default: 'Ray Anthony Andus',
   },
-  description: "A full stack MERN developer's portfolio",
+  description:
+    'This is the portfolio site of Ray Anthony Andus. Ray is a full stack MERN developer.',
+  icons: {
+    icon: [{ rel: 'icon', url: '/profile-image.jpg' }],
+  },
 };
 
 export default function RootLayout({
