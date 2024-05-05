@@ -3,7 +3,7 @@ import { SkillsCategoryEnum } from '@/app/types';
 export const skillsList = [
   {
     displayName: 'Reactjs',
-    iconPath: '/reactjs.png',
+    iconPath: '/reactjs.svg',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 4,
     yearStarted: '2020',
@@ -12,7 +12,7 @@ export const skillsList = [
   },
   {
     displayName: 'Nextjs',
-    iconPath: '/nextjs.png',
+    iconPath: '/nextjs.svg',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 1,
     yearStarted: '2024',
@@ -21,7 +21,7 @@ export const skillsList = [
   },
   {
     displayName: 'Typescript',
-    iconPath: '/typescript.png',
+    iconPath: '/typescript.svg',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
@@ -39,7 +39,7 @@ export const skillsList = [
   },
   {
     displayName: 'Javascript',
-    iconPath: '/javascript.png',
+    iconPath: '/javascript.svg',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 12,
     yearStarted: '2012',
@@ -66,7 +66,7 @@ export const skillsList = [
   },
   {
     displayName: 'jQuery',
-    iconPath: '/jquery.png',
+    iconPath: '/jquery.svg',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 4,
     yearStarted: '2012',
@@ -84,7 +84,7 @@ export const skillsList = [
   },
   {
     displayName: 'Bootstrap',
-    iconPath: '/bootstrap.webp',
+    iconPath: '/bootstrap.svg',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 3,
     yearStarted: '2015',
@@ -111,7 +111,7 @@ export const skillsList = [
   },
   {
     displayName: 'Tailwind',
-    iconPath: '/tailwind.png',
+    iconPath: '/tailwind.svg',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 1,
     yearStarted: '2024',
@@ -120,7 +120,7 @@ export const skillsList = [
   },
   {
     displayName: 'Daisy UI',
-    iconPath: '/daisyui.png',
+    iconPath: '/daisy-ui.webp',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 1,
     yearStarted: '2024',
@@ -129,7 +129,7 @@ export const skillsList = [
   },
   {
     displayName: 'Nodejs',
-    iconPath: '/nodejs.png',
+    iconPath: '/nodejs.svg',
     category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
@@ -138,7 +138,7 @@ export const skillsList = [
   },
   {
     displayName: 'Expressjs',
-    iconPath: '/expressjs.png',
+    iconPath: '/expressjs.svg',
     category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
@@ -165,7 +165,7 @@ export const skillsList = [
   },
   {
     displayName: 'PHP',
-    iconPath: '/php.png',
+    iconPath: '/php.svg',
     category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 8,
     yearStarted: '2011',
@@ -174,25 +174,25 @@ export const skillsList = [
   },
   {
     displayName: 'Lumen by Laravel',
-    iconPath: '/lumen-laravel.png',
+    iconPath: '/lumen-laravel.svg',
     category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 8,
     yearStarted: '2018',
     yearEnded: '2020',
-    isVisible: true,
+    isVisible: false,
   },
   {
     displayName: 'CodeIgniter',
-    iconPath: '/codeigniter.png',
+    iconPath: '/codeigniter.svg',
     category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 8,
     yearStarted: '2011',
     yearEnded: '2015',
-    isVisible: true,
+    isVisible: false,
   },
   {
     displayName: 'Go',
-    iconPath: '/go.png',
+    iconPath: '/go.svg',
     category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 8,
     yearStarted: '2020',
@@ -201,7 +201,7 @@ export const skillsList = [
   },
   {
     displayName: 'MongoDB',
-    iconPath: '/mongodb.png',
+    iconPath: '/mongodb.svg',
     category: SkillsCategoryEnum.DATABASE,
     yearsOfExperience: 3,
     yearStarted: '2021',
@@ -210,7 +210,7 @@ export const skillsList = [
   },
   {
     displayName: 'PostgreSQL',
-    iconPath: '/postgresql.png',
+    iconPath: '/postgresql.svg',
     category: SkillsCategoryEnum.DATABASE,
     yearsOfExperience: 2,
     yearStarted: '2018',
@@ -227,15 +227,6 @@ export const skillsList = [
     isVisible: true,
   },
   {
-    displayName: 'Azure',
-    iconPath: '/azure.png',
-    category: SkillsCategoryEnum.CLOUD,
-    yearsOfExperience: 6,
-    yearStarted: '2021',
-    yearEnded: 'present',
-    isVisible: true,
-  },
-  {
     displayName: 'Azure DevOps',
     iconPath: '/azure-devops.png',
     category: SkillsCategoryEnum.CLOUD,
@@ -245,8 +236,17 @@ export const skillsList = [
     isVisible: true,
   },
   {
+    displayName: 'Azure App Service',
+    iconPath: '/azure-app-service.svg',
+    category: SkillsCategoryEnum.CLOUD,
+    yearsOfExperience: 1,
+    yearStarted: '2021',
+    yearEnded: 'present',
+    isVisible: true,
+  },
+  {
     displayName: 'Azure SignalR',
-    iconPath: '/azure-signalr.png',
+    iconPath: '/azure-signalr.svg',
     category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 1,
     yearStarted: '2022',
@@ -345,7 +345,7 @@ export const skillsList = [
   },
   {
     displayName: 'Netlify',
-    iconPath: '/netlify.png',
+    iconPath: '/netlify.svg',
     category: SkillsCategoryEnum.CLOUD,
     yearsOfExperience: 6,
     yearStarted: '2020',
@@ -354,7 +354,7 @@ export const skillsList = [
   },
   {
     displayName: 'Github',
-    iconPath: '/github.png',
+    iconPath: '/github.svg',
     category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 9,
     yearStarted: '2016',
@@ -372,12 +372,12 @@ export const skillsList = [
   },
   {
     displayName: 'Jest',
-    iconPath: '/jest.png',
+    iconPath: '/jest.svg',
     category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 5,
     yearStarted: '2020',
     yearEnded: 'present',
-    isVisible: true,
+    isVisible: false,
   },
   {
     displayName: 'Jira',
@@ -390,7 +390,7 @@ export const skillsList = [
   },
   {
     displayName: 'Draw.io',
-    iconPath: '/drawio.png',
+    iconPath: '/drawio.svg',
     category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 5,
     yearStarted: '2020',
@@ -417,7 +417,7 @@ export const skillsList = [
   },
   {
     displayName: 'PubNub',
-    iconPath: '/pubnub.png',
+    iconPath: '/pubnub.svg',
     category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 1,
     yearStarted: '2022',
@@ -426,7 +426,7 @@ export const skillsList = [
   },
   {
     displayName: 'Sentry',
-    iconPath: '/sentry.png',
+    iconPath: '/sentry.svg',
     category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 1,
     yearStarted: '2021',
