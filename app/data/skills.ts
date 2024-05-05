@@ -156,7 +156,7 @@ export const skillsList = [
   },
   {
     displayName: 'Typescript',
-    iconPath: '/typescript.png',
+    iconPath: '/typescript.svg',
     category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 3,
     yearStarted: '2021',
