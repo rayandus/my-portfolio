@@ -15,33 +15,33 @@ You can access [the website here](https://rayandus.vercel.app) 🌐
 
 This project is built with:
 
-<div style="display: flex; gap: 20px;">
-    <div align="center">
+<span style="display: flex; gap: 20px;">
+    <span align="center">
         <img src="./public/nextjs.svg" width="50" height="50">
         <br />
         Nextjs
-    </div>
-    <div align="center">
+    </span>
+    <span align="center">
         <img src="./public/reactjs.svg" width="50" height="50">
         <br />
         Reactjs
-    </div>
-    <div align="center">
+    </span>
+    <span align="center">
         <img src="./public/typescript.svg" width="50" height="50">
         <br />
         Typescript
-    </div>
-    <div align="center">
+    </span>
+    <span align="center">
         <img src="./public/tailwind.svg" width="50" height="50">
         <br />
         Tailwind CSS
-    </div>
-    <div align="center">
+    </span>
+    <span align="center">
         <img src="./public/daisy-ui.svg" width="50" height="50">
         <br />
         DaisyUI
-    </div>
-</div>
+    </span>
+</span>
 <br />
 <br />
 
