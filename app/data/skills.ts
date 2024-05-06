@@ -170,7 +170,7 @@ export const skillsList = [
     yearsOfExperience: 8,
     yearStarted: '2011',
     yearEnded: '2019',
-    isVisible: true,
+    isVisible: false,
   },
   {
     displayName: 'Lumen by Laravel',
