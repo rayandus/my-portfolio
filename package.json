@@ -2,11 +2,14 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.11.1"
+  },
   "scripts": {
     "preinstall": "npx --yes only-allow pnpm",
     "preupdate": "npx --yes only-allow pnpm",
-    "dev": "next dev",
     "build": "next build",
+    "start:dev": "next dev",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",

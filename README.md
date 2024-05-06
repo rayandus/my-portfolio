@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio
 
-## Getting Started
+My Portfolio is a personal web application project that I’ve developed to showcase my professional skills, work experience, and projects.
 
-First, run the development server:
+The portfolio includes sections such as:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **About Me.** A brief introduction about myself.
+- **Skills.** A detailed list of my up-to-date technical skills, broken down to front-end, back-end, cloud, databases, and other tools that I’m proficient in.
+- **Work Experience.** A timeline of my work history, roles, responsibilities, and key achievements in each position.
+- **Projects.** A showcase of my professional projects excluding personal projects, with descriptions, responsibilities, and technologies used. There are some technologies indicated in this section that are not displayed under skills. It means, that I have no longer used them, but remains in the working knowledge category.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can access [the website here](https://rayandus.vercel.app) 🌐
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project is built with:
 
-## Learn More
+<div style="display: flex; gap: 20px;">
+    <div align="center">
+        <img src="./public/nextjs.svg" width="50" height="50">
+        <br />
+        Nextjs
+    </div>
+    <div align="center">
+        <img src="./public/reactjs.svg" width="50" height="50">
+        <br />
+        Reactjs
+    </div>
+    <div align="center">
+        <img src="./public/typescript.svg" width="50" height="50">
+        <br />
+        Typescript
+    </div>
+    <div align="center">
+        <img src="./public/tailwind.svg" width="50" height="50">
+        <br />
+        Tailwind CSS
+    </div>
+    <div align="center">
+        <img src="./public/daisy-ui.svg" width="50" height="50">
+        <br />
+        DaisyUI
+    </div>
+</div>
+<br />
+<br />
 
-To learn more about Next.js, take a look at the following resources:
+This project is deployed in [Vercel](https://vercel.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Set-up Prerequisite
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Node Version Manager (nvm)
+1. Pnpm
 
-## Deploy on Vercel
+## Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone [my-portfolio](https://github.com/rayandus/bid-portal-demo) repo in your local
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Go to project root directory and install
+
+   ```bash
+   cd my-portfolio
+   git checkout main
+   nvm install
+   pnpm install
+   ```
+
+1. Start the application
+
+   ```bash
+   pnpm start:dev
+   ```
+
+   > The app will run on port `3000`. E.g. `http://localhost:3000`
+
+   or
+
+   ```bash
+   pnpm start:dev -- --port 3000
+   ```
+
+   > Just replace `PORT=3000` to your choice of port
