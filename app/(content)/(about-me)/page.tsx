@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { EmojiSmile } from 'react-bootstrap-icons';
+import { EmojiSmileFill } from 'react-bootstrap-icons';
 import { GlassCard } from '@/app/common';
 import AttributeRandomizer from './attribute-randomizer';
 
@@ -25,10 +25,7 @@ export const metadata: Metadata = {
 const Home = () => {
   return (
     <section className="mb-[60px]">
-      <GlassCard
-        className="h-stretch-vw p-5 min-h-[738px] h-[calc(100vh - 120px)] xl:min-h-0 xl:h-fit"
-        // style={{ height: '' }}
-      >
+      <GlassCard className="h-stretch-vw p-5 min-h-[738px] h-[calc(100vh - 120px)] xl:min-h-0 xl:h-fit">
         <div className="text-l p-8">
           <span className="block text-xl">I am Ray and I am...</span>
           <AttributeRandomizer attributes={professionalAttributes} />
@@ -54,7 +51,7 @@ const Home = () => {
             </p>
             <p className="mt-5">
               Feel free to explore my portfolio to know more about me
-              <EmojiSmile size={20} className="ml-2 inline" />
+              <EmojiSmileFill size={20} className="ml-2 inline text-amber-300" />
             </p>
           </article>
         </div>
