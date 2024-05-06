@@ -8,7 +8,7 @@ export const projects = [
       'Phase 1 of the Store AI Project which focuses on developing an AI Assistant Configuration Management and Playground, allowing admins to create, train, and test their AI assistants. Includes the development of Chat Assistant UI library, installable via NPM. The UI library is intended to be used in Endless Aisle solution. It’s also used in the aforementioned playground. The chat assistant integrates with in-house API which under-the-hood is powered by OpenAI.',
     participation:
       'Developed both configuration management for AI Assistants and Chat UI library',
-    techStack: ['Reactjs', 'Emotion', 'React Query', 'Typescript', 'Expressjs'],
+    techStack: ['Reactjs', 'React Query', 'Typescript', 'Emotion', 'Expressjs'],
   },
   {
     company: 'Ombori',
@@ -18,7 +18,7 @@ export const projects = [
     description: 'Major fixes and overhaul on products content management.',
     participation:
       'Fixes and refactors • Streamlined reusable react-final-form components • Created unit tests. Performed manual tests • Reintegration of new api endpoints',
-    techStack: ['Reactjs', 'Emotion', 'React Query', 'Typescript', 'Expressjs'],
+    techStack: ['Reactjs', 'React Query', 'Typescript', 'Emotion', 'Expressjs'],
   },
   {
     company: 'Ombori',
@@ -31,10 +31,10 @@ export const projects = [
       'Improve content management part including the codebase to enable design override much easier based on UX design approved by the client • Refactors and fixes.',
     techStack: [
       'Reactjs',
-      'Emotion',
       'React Query',
-      'Expressjs',
       'Typescript',
+      'Expressjs',
+      'Emotion',
       'MongoDB',
     ],
   },
@@ -49,10 +49,10 @@ export const projects = [
       'Develop the UI part • Create api endpoints that communicates to Azure IoT Edge.',
     techStack: [
       'Reactjs',
-      'Emotion',
       'React Query',
-      'Expressjs',
       'Typescript',
+      'Expressjs',
+      'Emotion',
       'MongoDB',
     ],
   },
@@ -65,7 +65,7 @@ export const projects = [
       'Enhance JSON schema widgets for a user-friendly branding creation experience. New widgets include a multilingual text field, file and typography and color selectors, and dynamic dropdowns based on API responses.',
     participation:
       'Create new widgets and enhance existing ones based on UX design • Integration testing to ensure each widget produces the correct schema settings.',
-    techStack: ['Reactjs', 'Emotion', 'React Query', 'Typescript', 'React JSON Schema'],
+    techStack: ['Reactjs', 'React Query', 'Typescript', 'Emotion', 'React JSON Schema'],
   },
   {
     company: 'Ombori',
@@ -78,10 +78,10 @@ export const projects = [
       'Develop the UI based on UX design • Create and update api endpoints for CRUD operations.',
     techStack: [
       'Reactjs',
-      'Emotion',
       'React Query',
-      'Expressjs',
       'Typescript',
+      'Emotion',
+      'Expressjs',
       'MongoDB',
     ],
   },
@@ -94,7 +94,7 @@ export const projects = [
       'A product solution that engages customer by allowing them to lift a product from a pedestal or platform and information about that product appears on the screen. Lifting two products will show both product information side-by-side.',
     participation:
       'Integrate with the RFID sensor application to determine the lift state of the product • Create the screen application solution to display the product information • Implement pre-rendering techniques required for a low-spec, low-budget cpu hardware',
-    techStack: ['Reactjs', 'Emotion', 'React Query', 'Typescript'],
+    techStack: ['Reactjs', 'React Query', 'Typescript', 'Emotion'],
   },
   {
     company: 'Ombori',
@@ -105,7 +105,7 @@ export const projects = [
       'A retail solution that allows customers to navigate products on a touch screen with a guided selling assistant. The assistant is a state machine powered chat box which helps or guides user to trim down preferences.',
     participation:
       'Customize the existing endless aisle solution • Integrate guided selling feature • Create a reusable a package for the guided selling feature',
-    techStack: ['Reactjs', 'Emotion', 'React Query', 'Typescript', 'X State'],
+    techStack: ['Reactjs', 'React Query', 'Typescript', 'Emotion', 'X State'],
   },
   {
     company: 'Ombori',
@@ -115,7 +115,7 @@ export const projects = [
     description:
       'A retail solution that allows staff and/or customers to navigate products on a touch screen and cast a selected product to a bigger screen for demonstration purposes or a high-resolution look of the product.',
     participation: 'Enhance or add features • refactor • PubNub integration',
-    techStack: ['Reactjs', 'Emotion', 'React Query', 'Typescript', 'PubNub'],
+    techStack: ['Reactjs', 'React Query', 'Typescript', 'Emotion', 'PubNub'],
   },
   {
     company: 'Ombori',
@@ -126,7 +126,7 @@ export const projects = [
       'Fashion-curated touch screen solution with tinder-like feature that lets customer swipe-select through different products and gets a fashion recommendation.',
     participation:
       'Implement over an in-house IoT platform • closely works with the designer • implements caching and optimizations to solve hardware limitations',
-    techStack: ['Reactjs', 'Emotion', 'React Query', 'Typescript'],
+    techStack: ['Reactjs', 'React Query', 'Typescript', 'Emotion'],
   },
   {
     company: 'Ombori',
@@ -140,10 +140,10 @@ export const projects = [
       'Assist tech lead in enhancements  •  Tasks/Staff app solution integration •  client collaboration and assistance during integration and roll out phases',
     techStack: [
       'Reactjs',
-      'Emotion',
       'React Query',
       'Typescript',
-      'Azure',
+      'Emotion',
+      'Azure Storage Accounts',
       'Azure SignalR',
     ],
   },
@@ -160,9 +160,8 @@ export const projects = [
       'Reactjs',
       'AntDesign',
       'Emotion',
-      'Expressjs',
       'Typescript',
-      'Azure',
+      'Expressjs',
       'Azure Functions',
       'Sentry',
     ],
@@ -176,7 +175,7 @@ export const projects = [
       'A cloud function that monitors the health of the devices per client and sends out a notification (email, slack) and logs them in sentry when devices become offline and when they become online. As part of the pipeline, the service will also be able to monitor and alert critical levels of CPU, memory, and disk usage.',
     participation:
       'Collaborate with tech lead with the enhancements and optimizations • ensures implementation adheres to technical expectations • gradually refactor areas that need improvements',
-    techStack: ['Expressjs', 'Typescript', 'Azure', 'Azure Functions'],
+    techStack: ['Expressjs', 'Typescript', 'Azure Functions', 'Azure CosmosDB'],
   },
   {
     company: 'Ombori',
@@ -189,11 +188,9 @@ export const projects = [
       'Collaborates with co-developer • implements UX from design team and suggests better alternatives as needed • identifies gray areas in the requirements and discusses with project manager',
     techStack: [
       'Reactjs',
-      'Material UI',
-      'CSS',
-      'Javascript',
       'Typescript',
-      'Azure',
+      'Material UI',
+      'Emotion',
       'Azure SignalR',
       'Azure Functions',
       'Azure DevOps',
@@ -212,12 +209,9 @@ export const projects = [
       'Main developer • implements UX from design team and suggests better alternatives as needed',
     techStack: [
       'Reactjs',
+      'Typescript',
       'Bootstrap',
       'Emotion',
-      'CSS',
-      'Javascript',
-      'Typescript',
-      'Azure',
       'Azure Storage Accounts',
       'Azure DevOps',
       'CI/CD',
@@ -232,16 +226,7 @@ export const projects = [
       'Billing system for charging solution subscriptions, overages, and generating invoices to subscribed organizations and sub-organizations.',
     participation:
       'Collaborates with co-developer and CTO on requirements and adherence of task implementations in relation to architectural design of the system • prevents and mitigates possible impact to dependent systems.',
-    techStack: [
-      'Reactjs',
-      'AntDesign',
-      'Emotion',
-      'CSS',
-      'Javascript',
-      'Expressjs',
-      'Typescript',
-      'MongoDB',
-    ],
+    techStack: ['Reactjs', 'AntDesign', 'Emotion', 'Typescript', 'Expressjs', 'MongoDB'],
   },
   {
     company: 'Ombori',
@@ -254,13 +239,11 @@ export const projects = [
       'Collaborates with co-developers and platform tech leads • ensures acceptance criteria are met •  participates in PR and/or peer code reviews',
     techStack: [
       'Reactjs',
+      'React Query',
+      'Typescript',
       'AntDesign',
       'Emotion',
-      'CSS',
-      'React Query',
-      'Javascript',
       'Expressjs',
-      'Typescript',
       'React JSON Schema',
       'MongoDB',
       'Sentry',
@@ -277,11 +260,9 @@ export const projects = [
       'Collaborates with co-developers and platform tech lead • ensures acceptance criteria are met • participates in PR and/or peer code reviews • initiates collating and documenting of coding standards',
     techStack: [
       'Reactjs',
+      'Typescript',
       'Material UI',
       'Emotion',
-      'CSS',
-      'Javascript',
-      'Typescript',
       'Azure Functions',
       'Azure CosmosDB',
       'Azure SignalR',
@@ -296,7 +277,7 @@ export const projects = [
       'A corporate social responsibility project aiming to provide Cebu City Government a portal to view and monitor establishment visitor logs for the purpose of contact tracing people and control the further spread of CoViD-19 in the region.',
     participation:
       'As development tech lead • analysis of MVP requirements and translation to technical specifications • ensures that specific requirements for the portal are sifted out from the overall requirement that is mostly focused on client-side mobile app.',
-    techStack: ['Reactjs', 'Material UI', 'CSS', 'Javascript', 'Netlify'],
+    techStack: ['Reactjs', 'Material UI', 'Tailwind', 'Netlify'],
   },
   {
     company: 'Nexity Technologies',
@@ -307,7 +288,7 @@ export const projects = [
       'Admin Hub/Portal where users can view their wallet, transactions, do disbursements, fund transfers, and manage own pool of clients or merchant users.',
     participation:
       'As development tech lead • analysis and translation of MVP requirements to tasks and wireframes • manages dependencies with other teams • reviews and tests code changes before merging • identifies code improvements that need refactoring • ensures process and quality adherence.',
-    techStack: ['Reactjs', 'Material UI', 'CSS', 'Javascript', 'Netlify'],
+    techStack: ['Reactjs', 'Material UI', 'Tailwind', 'Netlify'],
   },
   {
     company: 'Nexity Technologies',
