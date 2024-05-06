@@ -76,7 +76,7 @@ This project is deployed in [Vercel](https://vercel.com/)
    or
 
    ```bash
-   pnpm start:dev -- --port 3000
+   PORT=3000 pnpm start:dev
    ```
 
    > Just replace `PORT=3000` to your choice of port
