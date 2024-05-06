@@ -209,6 +209,15 @@ export const skillsList = [
     isVisible: false,
   },
   {
+    displayName: 'Mongoosejs',
+    iconPath: '/mongoosejs.png',
+    category: SkillsCategoryEnum.BACKEND,
+    yearsOfExperience: 8,
+    yearStarted: '2020',
+    yearEnded: 'present',
+    isVisible: true,
+  },
+  {
     displayName: 'MongoDB',
     iconPath: '/mongodb.svg',
     category: SkillsCategoryEnum.DATABASE,
