@@ -17,7 +17,7 @@ This project is built with:
 
 <table cellpadding="0" cellspacing="0">
   <tr style="padding: 0">
-    <td valign="top" align="center" style="border: 0px !important;">
+    <td valign="top" align="center">
         <img src="./public/nextjs.svg" width="50" height="50">
         <br />
         Nextjs
@@ -44,7 +44,6 @@ This project is built with:
     </td>
   </tr>
 </table>
-<br />
 
 This project is deployed in [Vercel](https://vercel.com/)
 
