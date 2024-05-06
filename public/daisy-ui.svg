@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="71.49 0 325.607 502.166" xmlns="http://www.w3.org/2000/svg">
+  <g style="" transform="matrix(0.5820109844207764, 0, 0, 0.5820109844207764, 780.8895263671875, 66.49405670166016)">
+    <rect x="-1195.046" y="478.378" width="512" height="256" rx="128" fill="#1AD1A5"/>
+    <circle cx="-939.046" cy="160.938" r="256" fill="white"/>
+    <circle cx="-939.046" cy="160.938" r="261" stroke="black" stroke-opacity="0.2" stroke-width="10" style="fill: rgb(255, 255, 255);"/>
+    <circle cx="-939.046" cy="160.938" r="114.688" fill="#FF9903"/>
+  </g>
+</svg>

@@ -129,7 +129,7 @@ export const skillsList = [
   },
   {
     displayName: 'Daisy UI',
-    iconPath: '/daisy-ui.webp',
+    iconPath: '/daisy-ui.svg',
     category: SkillsCategoryEnum.FRONTEND,
     yearsOfExperience: 1,
     yearStarted: '2024',
@@ -210,7 +210,7 @@ export const skillsList = [
   },
   {
     displayName: 'Mongoosejs',
-    iconPath: '/mongoosejs.png',
+    iconPath: '/mongoosejs.svg',
     category: SkillsCategoryEnum.BACKEND,
     yearsOfExperience: 8,
     yearStarted: '2020',
@@ -237,7 +237,7 @@ export const skillsList = [
   },
   {
     displayName: 'MSSQL',
-    iconPath: '/mssql.png',
+    iconPath: '/mssql.svg',
     category: SkillsCategoryEnum.DATABASE,
     yearsOfExperience: 6,
     yearStarted: '2011',
@@ -341,7 +341,7 @@ export const skillsList = [
     yearsOfExperience: 6,
     yearStarted: '2018',
     yearEnded: '2020',
-    isVisible: true,
+    isVisible: false,
   },
   {
     displayName: 'GCP Cloud Functions',
@@ -426,12 +426,12 @@ export const skillsList = [
   },
   {
     displayName: 'X State',
-    iconPath: '/xstate.png',
+    iconPath: '/xstate.svg',
     category: SkillsCategoryEnum.OTHERS,
     yearsOfExperience: 1,
     yearStarted: '2022',
     yearEnded: '2023',
-    isVisible: false,
+    isVisible: true,
   },
   {
     displayName: 'PubNub',
