@@ -15,8 +15,6 @@ You can access [the website here](https://rayandus.vercel.app) 🌐
 
 This project is built with:
 
-
-
 <table cellpadding="0">
   <tr style="padding: 0">
     <td valign="top">
