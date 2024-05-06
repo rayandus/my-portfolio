@@ -12,10 +12,6 @@ export const metadata: Metadata = {
 const WorkExperience = () => {
   return (
     <section className="mb-[60px]">
-      {/* <div
-        className="thin-scroll overflow-y-auto mt-5"
-        style={{ height: 'calc(100% - 70px)' }}
-      > */}
       <GlassCard className="p-5">
         <ul className="timeline timeline-vertical timeline-left timeline-snap-icon py-8">
           {workExperiences.map((workExperience, index) => {
@@ -66,23 +62,3 @@ const WorkExperience = () => {
 };
 
 export default WorkExperience;
-
-{
-  /* <li>
-          <div className="timeline-start">1984</div>
-          <div className="timeline-middle">
-            <CheckCircleFill size={18} />
-          </div>
-          <div className="timeline-end timeline-box">First Macintosh computer</div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div className="timeline-start">2015</div>
-          <div className="timeline-middle">
-            <CheckCircleFill size={18} />
-          </div>
-          <div className="timeline-end timeline-box">Apple Watch</div>
-        </li>
-         */
-}
