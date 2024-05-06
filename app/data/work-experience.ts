@@ -25,7 +25,7 @@ export const workExperiences = [
       },
       {
         role: 'Front-end Developer',
-        startDate: 'May 2018',
+        startDate: 'May 2020',
         endDate: 'June 2020',
         description:
           'Develops admin portals • Discovers tools, coding standards, best practices',

@@ -23,10 +23,6 @@ const Projects = () => {
             } = project;
 
             return (
-              // <div
-              //   key={projectName}
-              //   className="card card-side text-base bg-white/0 shadow-lg ring-1 ring-inset ring-white/5 backdrop-blur-3xl last-of-type:mb-6"
-              // >
               <GlassCard
                 key={projectName}
                 className="p-5 sm:rounded-none sm:shadow-none sm:ring-1"

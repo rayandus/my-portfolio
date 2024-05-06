@@ -38,6 +38,15 @@ export const skillsList = [
     isVisible: true,
   },
   {
+    displayName: 'Redux',
+    iconPath: '/redux.svg',
+    category: SkillsCategoryEnum.FRONTEND,
+    yearsOfExperience: 4,
+    yearStarted: '2018',
+    yearEnded: 'present',
+    isVisible: true,
+  },
+  {
     displayName: 'Javascript',
     iconPath: '/javascript.svg',
     category: SkillsCategoryEnum.FRONTEND,

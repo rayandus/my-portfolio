@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 interface RoleDetailsProps {
   details: {
     role: string;
